@@ -16,7 +16,7 @@ def hello():
         visits = "<i>cannot connect to Redis, counter disabled</i>"
 
     html = "<h3>Hello Task Completed</h3>" \
-           "<h3>This is a simple python application to track the number of visits<h3>" \
+           "<h3>This is aan amazing python application to track the number of visits<h3>" \
            "<b>Hostname:</b> {hostname}<br/>" \
            "<b>Visits:</b> {visits}"
     return html.format(name=os.getenv("NAME", "Audacy"), hostname=socket.gethostname(), visits=visits)
